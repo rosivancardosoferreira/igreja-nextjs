@@ -9,13 +9,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
       </main>
-
       <footer>
-        <h2>Sou um rodape</h2>
       </footer>
     </div>
   )
