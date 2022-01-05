@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HeaderContainer } from "./style";
 import Images from "utils/images";
 import { BtnPrimary } from "presentation/components/Buttons";
 import SideMenu from "./SideMenu";
 export default function Header() {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    document.body.style.overflowY = open ? "hidden" : "auto";
+  }, [open]);
   return (
     <HeaderContainer open={open}>
       <div className="l-background" onClick={() => setOpen(false)}></div>

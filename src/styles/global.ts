@@ -7,6 +7,7 @@ export default createGlobalStyle`
     --f-media-large: 2rem;
     --f-extra-large: 3rem;
     --max-width-desktop: calc(1216px + 72px * 2 );
+    --max-width-tablet: calc(959px + 32px * 2 );
   }
 
   * {
@@ -23,18 +24,14 @@ export default createGlobalStyle`
   */
 
   body {
-    background: #fff;
+    background: #FFFFFF;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     #__next {
-      @media (min-width: calc(1216px + 72px * 2 )) {
-        /* @media (min-width: 1023px) { */
-        grid-template-areas:
-        "full full full"
-        ".    safe  ."
-        "footer footer footer";
-        grid-template-columns: 1fr var(--max-width-desktop) 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
         display: grid;
-        row-gap: 90px;
-      }
+        row-gap: 80px;
     }
   }
   .down {
@@ -42,5 +39,8 @@ export default createGlobalStyle`
     &:hover {
         transform: translateY(-2px);
     }
+  }
+  html {
+    height: -webkit-fill-available;
   }
 `;

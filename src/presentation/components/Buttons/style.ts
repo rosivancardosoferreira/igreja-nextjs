@@ -32,7 +32,7 @@ const BtnSecondary = css`
 `;
 
 export const ButtonContainer = styled.button<propsButton>`
-  padding: 5px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.3s;

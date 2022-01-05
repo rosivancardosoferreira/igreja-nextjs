@@ -7,22 +7,21 @@ interface propsSideMenu {
 const Open = css`
   padding-left: 32px;
   padding-right: 64px;
-  opacity: 1;
   z-index: 3;
 `;
 
 const Close = css`
   padding: 0;
-  width: 0;
-  opacity: 0;
+  margin-left: -300px;
 `;
 
 export const ContainetAside = styled.aside<propsSideMenu>`
   background-color: lightblue;
-  position: absolute;
+  position: fixed;
   background-color: ${props => props.theme.colors.primaryWhite};
   height: 100vh;
-  transition: all 0.3s;
+  border: 1px solid red;
+  transition: all 0.5s;
   ${props => (props.open ? Open : Close)};
   padding-top: calc(60px + 20px);
   z-index: 2;

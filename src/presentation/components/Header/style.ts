@@ -20,20 +20,20 @@ const BGClose = css`
 `;
 
 export const HeaderContainer = styled.header<propsHeader>`
-  width: 100%;
   background-color: ${props => props.theme.colors.primaryWhite};
-  grid-area: full;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
+  grid-column: 1 / 4;
   .l-background {
     display: none;
   }
   .l-header {
-    padding: 14px 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
     .l-header__menu {
       display: none;
     }
@@ -44,6 +44,9 @@ export const HeaderContainer = styled.header<propsHeader>`
       gap: 30px;
       align-items: center;
       li {
+        button {
+          padding: 5px 20px;
+        }
         a {
           text-decoration: none;
           font-size: var(--f-normal);
@@ -69,16 +72,14 @@ export const HeaderContainer = styled.header<propsHeader>`
       }
     }
   }
-  @media (min-width: calc(1216px + 72px * 2 )) {
-    display: grid;
-    grid-template-columns: var(--max-width-desktop);
-    justify-content: center;
+
+  @media screen and (min-width: 1024px) {
+    .l-header {
+      padding: 14px 72px;
+    }
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-  }
-
-  @media (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .l-background {
       display: block;
       transition: all 0.2s;
@@ -150,6 +151,11 @@ export const HeaderContainer = styled.header<propsHeader>`
         transform: rotate(-45deg) translate(35px, 35px);
         right: 0;
       }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .l-header {
+      max-width: var(--max-width-desktop);
     }
   }
 `;

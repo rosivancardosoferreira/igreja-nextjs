@@ -6,10 +6,19 @@ export const Section = styled.section`
 `;
 
 export const GridSection = css`
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 0) {
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: var(--max-width-tablet);
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
     padding: 0 72px;
     max-width: var(--max-width-desktop);
   }
