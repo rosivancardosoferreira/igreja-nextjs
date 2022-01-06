@@ -11,6 +11,6 @@
 
 module.exports = {
   images: {
-    domains: [],
+    domains: ["images.squarespace-cdn.com"],
   },
 }

@@ -7,7 +7,10 @@ const theme = {
     primary: "#8257E7",
     blueBlack: "#1C2439",
     secondaryBlack: "#1D2228",
-    blueDark: "#282466"
+    blueDark: "#282466",
+    gray: "#AEB5CB",
+    grayDark: "#585F67",
+    grayDarkSecondary: "#717070"
   }
 };
 

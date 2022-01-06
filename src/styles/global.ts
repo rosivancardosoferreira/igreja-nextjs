@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
+    --f-min: 0.75rem; //12px
+    --f-smal: 0.875rem;
     --f-normal: 1rem; //16px
     --f-media: 1.25rem; //20px
     --f-media-large: 2rem; //32px
@@ -12,10 +14,17 @@ export default createGlobalStyle`
 
   * {
     box-sizing: border-box;
-    list-style: none;
     margin: 0;
     outline: 0;
     padding: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+
   }
 
   /*

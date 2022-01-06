@@ -6,6 +6,10 @@ const Images = {
   Banner: {
     src: "/static/images/banner_image.png",
     alt: "Banner Doação"
+  },
+  Fakelog: {
+    src: "/static/images/round-logo.png",
+    alt: "Logo Parceiros"
   }
 };
 

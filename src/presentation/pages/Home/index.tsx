@@ -10,6 +10,7 @@ import { PresentationPage } from "./style";
 // COMPONENTS
 import BannerInfos from "presentation/components/BannerInfos";
 import News from "presentation/components/News";
+import Partners from "presentation/components/Partners";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       </PresentationPage>
       <BannerInfos />
       <News />
+      <Partners />
     </>
   );
 }

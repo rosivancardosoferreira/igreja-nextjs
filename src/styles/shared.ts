@@ -20,8 +20,8 @@ export const GridSection = css`
   }
 
   @media screen and (min-width: 1024px) {
+    max-width: var(--max-width-desktop);
     grid-template-columns: repeat(12, 1fr);
     padding: 0 72px;
-    max-width: var(--max-width-desktop);
   }
 `;

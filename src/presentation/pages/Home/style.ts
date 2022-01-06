@@ -49,7 +49,6 @@ export const PresentationPage = styled.main`
     }
     img {
       grid-column: 6/9;
-      border: 1px solid red;
     }
   }
   @media screen and (min-width: 1024px) {

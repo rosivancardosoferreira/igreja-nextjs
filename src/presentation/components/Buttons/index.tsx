@@ -13,7 +13,7 @@ export function BtnPrimary({ title, onClick, type }: PropsBtn) {
       type={type || "button"}
       onClick={onClick}
       typeBtn="primary"
-      className="down"
+      className="down btn__primary"
     >
       {title}
     </ButtonContainer>
