@@ -4,7 +4,6 @@ import { GridSection } from "styles/shared";
 export const ContainerSendMessage = styled.section`
   ${GridSection}
   grid-column: 1 / 4;
-  border: 1px solid red;
   .message__header {
     .message__title {
       color: ${props => props.theme.colors.secondaryBlack};

@@ -1,4 +1,8 @@
 const Images = {
+  LogoWhite: {
+    src: "/static/images/LOGO_WHITE.png",
+    alt: "Logo empresa"
+  },
   Logo: {
     src: "/static/images/LOGO.png",
     alt: "Logo empresa"
