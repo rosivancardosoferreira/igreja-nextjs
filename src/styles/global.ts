@@ -72,5 +72,6 @@ export default createGlobalStyle`
     border: 1px solid ${props => props.theme.colors.grayDark};
     resize: none;
     border-radius: 5px;
+    height: 120px;
   }
 `;
