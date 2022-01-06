@@ -19,8 +19,8 @@ export const PresentationPage = styled.main`
   }
   button {
     margin-top: 50px;
-    grid-column: 1/4;
     width: fit-content;
+    grid-column: 1/5;
   }
 
   img {
@@ -42,24 +42,25 @@ export const PresentationPage = styled.main`
 
   @media (min-width: 768px) and (max-width: 1023px) {
     h1 {
-      grid-column: 1/7;
-    }
-    p {
       grid-column: 1/6;
     }
+    p {
+      grid-column: 1/3;
+    }
     img {
-      grid-column: 8/13;
+      grid-column: 6/9;
+      border: 1px solid red;
     }
   }
   @media screen and (min-width: 1024px) {
     h1 {
-      grid-column: 1/6;
+      grid-column: 1/8;
     }
     p {
-      grid-column: 1/5;
+      grid-column: 1/7;
     }
     img {
-      grid-column: 6/9;
+      grid-column: 8/13;
     }
   }
 `;

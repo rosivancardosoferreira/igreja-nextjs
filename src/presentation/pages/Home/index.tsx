@@ -7,6 +7,10 @@ import Images from "utils/images";
 // STYLES
 import { PresentationPage } from "./style";
 
+// COMPONENTS
+import BannerInfos from "presentation/components/BannerInfos";
+import News from "presentation/components/News";
+
 export default function Home() {
   return (
     <>
@@ -19,6 +23,8 @@ export default function Home() {
         <BtnSecondary title="Conheça mais da causa" />
         <img src={Images.Banner.src} alt={Images.Banner.alt} />
       </PresentationPage>
+      <BannerInfos />
+      <News />
     </>
   );
 }

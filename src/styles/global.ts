@@ -2,10 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
-    --f-normal: 1rem;
-    --f-media: 1.25rem;
-    --f-media-large: 2rem;
-    --f-extra-large: 3rem;
+    --f-normal: 1rem; //16px
+    --f-media: 1.25rem; //20px
+    --f-media-large: 2rem; //32px
+    --f-extra-large: 3rem; //48px
     --max-width-desktop: calc(1216px + 72px * 2 );
     --max-width-tablet: calc(959px + 32px * 2 );
   }

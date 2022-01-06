@@ -10,11 +10,13 @@ export const GridSection = css`
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     padding: 0 32px;
+    column-gap: 16px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 768px) {
     max-width: var(--max-width-tablet);
-    margin: 0 auto;
+    column-gap: 32px;
   }
 
   @media screen and (min-width: 1024px) {

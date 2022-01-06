@@ -9,7 +9,7 @@ export const ContainerBannerInfos = styled.section`
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 47px 0;
+    padding: 47px 72px;
     article {
       display: flex;
       flex-direction: column;
@@ -28,6 +28,15 @@ export const ContainerBannerInfos = styled.section`
       }
       p {
         font-size: var(--f-media);
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    div {
+      flex-wrap: wrap;
+      row-gap: 5rem;
+      article {
+        width: 100%;
       }
     }
   }

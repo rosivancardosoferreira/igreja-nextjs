@@ -20,7 +20,6 @@ export const ContainetAside = styled.aside<propsSideMenu>`
   position: fixed;
   background-color: ${props => props.theme.colors.primaryWhite};
   height: 100vh;
-  border: 1px solid red;
   transition: all 0.5s;
   ${props => (props.open ? Open : Close)};
   padding-top: calc(60px + 20px);
