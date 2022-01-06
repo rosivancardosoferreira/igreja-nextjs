@@ -11,6 +11,7 @@ import { PresentationPage } from "./style";
 import BannerInfos from "presentation/components/BannerInfos";
 import News from "presentation/components/News";
 import Partners from "presentation/components/Partners";
+import SendMessage from "presentation/components/SendMessage";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <BannerInfos />
       <News />
       <Partners />
+      <SendMessage />
     </>
   );
 }

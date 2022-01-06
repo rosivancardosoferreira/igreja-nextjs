@@ -35,7 +35,7 @@ export const ContainerCardNews = styled.article`
     color: ${props => props.theme.colors.grayDark};
     font-family: "Source Sans Pro", sans-serif;
     font-size: var(--f-smal);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .card__footer {
@@ -52,13 +52,13 @@ export const ContainerCardNews = styled.article`
       .card__date {
         color: ${props => props.theme.colors.grayDarkSecondary};
         font-family: "Source Sans Pro", sans-serif;
-        font-size: var(--f-min));
+        font-size: var(--f-smal);
       }
     }
     .card__read__more {
       color: ${props => props.theme.colors.blueDark};
       font-family: "Source Sans Pro", sans-serif;
-      font-size: var(--f-min));
+      font-size: var(--f-smal);
       font-weight: 600;
     }
   }

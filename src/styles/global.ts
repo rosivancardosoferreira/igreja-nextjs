@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
   :root {
     --f-min: 0.75rem; //12px
-    --f-smal: 0.875rem;
+    --f-smal: 0.875rem; //14px
     --f-normal: 1rem; //16px
     --f-media: 1.25rem; //20px
     --f-media-large: 2rem; //32px
@@ -51,5 +51,26 @@ export default createGlobalStyle`
   }
   html {
     height: -webkit-fill-available;
+  }
+
+  .input__text,
+  .input__text__area
+   {
+    width: 100%;
+    color: ${props => props.theme.colors.grayDark};
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: var(--f-smal);
+    padding: 5px;
+
+  }
+  .input__text {
+    border: none;
+    border-bottom: 1px solid ${props => props.theme.colors.grayDark};
+  }
+
+  .input__text__area {
+    border: 1px solid ${props => props.theme.colors.grayDark};
+    resize: none;
+    border-radius: 5px;
   }
 `;

@@ -7,6 +7,7 @@ export const Section = styled.section`
 
 export const GridSection = css`
   @media screen and (min-width: 0) {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     padding: 0 32px;

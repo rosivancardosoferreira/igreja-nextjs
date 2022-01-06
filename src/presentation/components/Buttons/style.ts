@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 interface propsButton {
-  typeBtn: "primary" | "secondary";
+  typeBtn: "primary" | "secondary" | "send__message";
 }
 
 const BtnPrimary = css`
@@ -31,12 +31,27 @@ const BtnSecondary = css`
   }
 `;
 
+const BtnSendMessage = css`
+  ${BtnSecondary}
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 10px;
+  &:hover {
+    svg path {
+      fill: ${props => props.theme.colors.primaryWhite};
+    }
+  }
+`;
+
 export const ButtonContainer = styled.button<propsButton>`
   display: block;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.3s;
+  width: fit-content;
   ${props => props.typeBtn === "primary" && BtnPrimary}
   ${props => props.typeBtn === "secondary" && BtnSecondary}
+  ${props => props.typeBtn === "send__message" && BtnSendMessage}
 `;

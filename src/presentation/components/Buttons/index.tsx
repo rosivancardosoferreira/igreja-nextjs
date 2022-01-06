@@ -1,6 +1,9 @@
 import React from "react";
 import { ButtonContainer } from "./style";
 
+// ASSETS
+import Icons from "utils/icons";
+
 interface PropsBtn {
   title: string;
   onClick?: () => void;
@@ -29,6 +32,20 @@ export function BtnSecondary({ title, onClick, type }: PropsBtn) {
       className="down"
     >
       {title}
+    </ButtonContainer>
+  );
+}
+
+export function BtnSendMessage({ title, onClick, type }: PropsBtn) {
+  return (
+    <ButtonContainer
+      type={type || "button"}
+      onClick={onClick}
+      typeBtn="send__message"
+      className="down btn__send__message"
+    >
+      {title}
+      {Icons.sendMessage}
     </ButtonContainer>
   );
 }
